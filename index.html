@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, intial=scale=1.0">
+  <title>Sass-Project</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="scss/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/90db5d577d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+
+  <style type="text/css">
+    .slider {
+      width: 100%;
+      margin: 30px auto;
+      display: flex;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+
+    .slick-prev,
+    .slick-next {
+      border: none;
+      background: transparent;
+      font-size: 30px;
+    }
+
+    .slick-prev i,
+    .slick-next i {
+      color: #156539;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: #156539;
+
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+      border: 2px solid #FDB210;
+
+    }
+
+    .slick-active {
+      opacity: 1;
+
+    }
+
+    .slick-current {
+      border: 2px solid #156539ed;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- navbar section -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"><i class="fas fa-paw fa-2x"></i><span
+        class="text-capitalize ml-2 h5" data-aos="zoom-in">wildies...</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Login </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Marathi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- header-section -->
+  <div class="container-fluid header_section">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="menu-section">
+          <ul class="nav header-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Inventory</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Education and Conservation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Volunteer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- section-one -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 p-0 d-flex align-items-end">
+        <div class="position-absolute aboutUs-content"  data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+   >
+          <h3>
+            About Us
+          </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend in justo ut tempor. Nam sed tellus
+            sed purus cursus ullamcorper. Nunc tincidunt gravida justo nec molestie. Nunc vitae pulvinar tellus. Etiam
+            at eleifend eros, id congue felis. Phasellus erat dolor, viverra id ante tincidunt, venenatis gravida velit.
+            Nullam sagittis</p>
+
+
+          <!-- <button class="btn p-2">Know More</button> -->
+          <!-- <a href="http://www.dribbble.com/chrisota" title="Chris Ota Dribbble">Know More</a>  -->
+
+
+
+
+          <div class="wrapper">
+            <div class="link_wrapper">
+              <a href="#">Know More</a>
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                  <path
+                    d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z" />
+                </svg>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="gradient"></div>
+        <img class="w-100 img-fluid" src="imges/Rectangle 3.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid footer-aboutUs d-flex justify-content-around">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-section">
+          <ul class="nav">
+            <li class="nav-item py-2 mx-5">
+              <a class="nav-link active" href="#"><img class="icons mr-1" src="imges/group2852.png" alt="" data-aos="flip-up"> Visits</a>
+            </li>
+            <li class="nav-item py-2 mx-5">
+              <a class="nav-link" href="#"><img class="icons mr-1" src="imges/mask-group-2.png" alt="" data-aos="flip-up"> Book Tickets</a>
+            </li>
+            <li class="nav-item py-2 mx-5">
+              <a class="nav-link" href="#"><img class="icons mr-1" src="imges/facilities.png" alt="" data-aos="flip-up"> Fcilities</a>
+            </li>
+            <li class="nav-item py-2 mx-5">
+              <a class="nav-link" href="#"><img class="icons mr-1" src="imges/events.png" alt="" data-aos="flip-up"> Events</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Donate an animal -->
+
+  <div class="container-fluid mb-5">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="part-header d-flex justify-content-center" data-aos="zoom-in">Donate An Animal</h1>
+        <section class="center slider">
+          <div>
+            <div class="card card-animal">
+              <img src="imges/priscilla-du-preez-vzbYBamdFt0-unsplash.png" class="card-img-top img-fluid priscilla"
+                alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Be a parent of your favorite animal</h5>
+                <p class="card-text">Individuals, families, schools or classes, organizations, businesses, groups of
+                  employees and large corporations... anyone and everyone!</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card card-animal">
+              <img src="imges/animal-collection.png" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Be a parent of your favorite animal</h5>
+                <p class="card-text">Individuals, families, schools or classes, organizations, businesses, groups of
+                  employees and large corporations... anyone and everyone!</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card card-animal">
+              <img src="imges/bg.png" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Be a parent of your favorite animal</h5>
+                <p class="card-text">Individuals, families, schools or classes, organizations, businesses, groups of
+                  employees and large corporations... anyone and everyone!</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card card-animal">
+              <img src="imges/animal-collection.png" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Be a parent of your favorite animal</h5>
+                <p class="card-text">Individuals, families, schools or classes, organizations, businesses, groups of
+                  employees and large corporations... anyone and everyone!</p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- cafe and restaurants -->
+
+  <div class="container-fluid mb-5 mt-5">
+    <div class="row bg-left mb-5">
+      <div class="col-md-4 card card-cafe border-0">
+        <div class="card-body">
+          <h3 class="card-title" data-aos="zoom-in">Cafe & Restaurants</h3>
+          <p class="card-text">Ut eget pellentesque sem. Suspendisse a est elit. Integer at fringilla nulla. Aliquam
+            mattis sed mi suscipit accumsan. Vestibulum auctor ipsum at metus laoreet sodales. Nulla facilisi.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam
+            sodales cursus orci, vitae semper ligula laoreet ac. Etiam fringilla, nibh nec hendrerit ullamcorper, orci
+            sapien auctor ligula, a pharetra dui sapien vitae odio. Integer sapien dui,</p>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="d-flex justify-content-end">
+          <img class="img-fluid" src="imges/cafe-&-restaurants.png" alt="" data-aos="fade-up">
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="row bg-right">
+      <div class="col-md-8">
+        <div class="d-flex justify-content-end">
+          <img class="img-fluid" src="imges/cafe-&-restaurants.png" alt="" data-aos="fade-up">
+        </div>
+      </div>
+      <div class="col-md-4 card card-cafe border-0">
+        <div class="card-body">
+          <h3 class="card-title" data-aos="zoom-in">Cafe & Restaurants</h3>
+          <p class="card-text">Ut eget pellentesque sem. Suspendisse a est elit. Integer at fringilla nulla. Aliquam
+            mattis sed mi suscipit accumsan. Vestibulum auctor ipsum at metus laoreet sodales. Nulla facilisi.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam
+            sodales cursus orci, vitae semper ligula laoreet ac. Etiam fringilla, nibh nec hendrerit ullamcorper, orci
+            sapien auctor ligula, a pharetra dui sapien vitae odio. Integer sapien dui,</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- education activities -->
+
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="part-header d-flex justify-content-center mt-5 mb-4" data-aos="zoom-in">Regular Education Activities</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="hebergements__container">
+          <img src="imges/butterfly.png" class="card-img-top" alt="...">
+          <div class="hebergements__content text-center">
+            <h5 class="hebergements__title">
+              Butterfly Show
+            </h5>
+
+            <div class="hebergements__desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend in justo ut tempor. Nam sed
+                tellus
+                sed purus cursus ullamcorper. Nunc tincidunt gravida justo nec molestie.</p>
+            </div>
+
+            <div class="hebergements__bottom">
+              <div class="hebergements__pension">
+                <div>6:00 P.M.</div>
+                <div>2Yrs - 3Yrs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="hebergements__container">
+          <img src="imges/tigers.png" class="card-img-top" alt="...">
+          <div class="hebergements__content text-center">
+            <h5 class="hebergements__title">
+              Breakfast with the Animals
+            </h5>
+
+            <div class="hebergements__desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend in justo ut tempor. Nam sed
+                tellus
+                sed purus cursus ullamcorper. Nunc tincidunt gravida justo nec molestie.</p>
+            </div>
+
+            <div class="hebergements__bottom">
+              <div class="hebergements__pension">
+                <div>6:00 P.M.</div>
+                <div>2Yrs - 3Yrs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="hebergements__container">
+          <img src="imges/jiraf.png" class="card-img-top" alt="...">
+          <div class="hebergements__content text-center">
+            <h5 class="hebergements__title">
+              Animal Geography
+            </h5>
+
+            <div class="hebergements__desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend in justo ut tempor. Nam sed
+                tellus
+                sed purus cursus ullamcorper. Nunc tincidunt gravida justo nec molestie.</p>
+            </div>
+
+            <div class="hebergements__bottom">
+              <div class="hebergements__pension">
+                <div>6:00 P.M.</div>
+                <div>2Yrs - 3Yrs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="hebergements__container">
+          <img src="imges/butterfly.png" class="card-img-top" alt="...">
+          <div class="hebergements__content text-center">
+            <h5 class="hebergements__title">
+              Pet or Touch the Animals
+            </h5>
+
+            <div class="hebergements__desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend in justo ut tempor. Nam sed
+                tellus
+                sed purus cursus ullamcorper. Nunc tincidunt gravida justo nec molestie.</p>
+            </div>
+
+            <div class="hebergements__bottom">
+              <div class="hebergements__pension">
+                <div>6:00 P.M.</div>
+                <div>2Yrs - 3Yrs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row mt-3 d-flex justify-content-center">
+      <div class="col-md-6">
+        <button class=" animationBtn btn btn-block app-formBtn p-2 mb-5">Download Zoo Volunteers: Application Form</button>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- social-networks -->
+  <div class="socialNetworks container d-flex justify-content-center mt-5 p-5">
+    <div class="row p-5">
+      <div class="col-4 text-center">
+        <div class=" mb-5">
+          <nav class="menu">
+            <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+            <label class="menu-open-button" for="menu-open">
+              <span class="lines line-1"></span>
+              <span class="lines line-2"></span>
+              <span class="lines line-3"></span>
+            </label>
+
+            <a href="#" class="menu-item blue"> <i class="fa fa-anchor"></i> </a>
+            <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
+            <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
+            <a href="#" class="menu-item purple"> <i class="fa fa-microphone"></i> </a>
+            <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+            <a href="#" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- footer -->
+
+  <div class="container-fluid bg-green text-left">
+    <div class="row footer-container py-4">
+      <div class="col-md-3 footer-content pl-0">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#.">Home</a></li>
+          <li><a href="#.">About Zoo</a></li>
+          <li><a href="#.">Visits</a></li>
+          <li><a href="#.">Animal Inventory</a></li>
+          <li><a href="#.">Tickets</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 footer-content">
+        <ul>
+          <li><a href="#.">Services</a></li>
+          <li><a href="#.">Media Gallery</a></li>
+          <li><a href="#.">Education & Conservation</a></li>
+          <li><a href="#.">Volunteer</a></li>
+          <li><a href="#.">Events</a></li>
+          <li><a href="#.">Department Information</a></li>
+          <li><a href="#.">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 footer-content">
+        <h5>Contact Info</h5>
+        <ul>
+          <li><a href="#."><i class="fa fa-map-marker-alt mr-1"></i>Morbi iacuils turpic eu mi <br>suscipit auctor.</a>
+          </li>
+          <li><a href="#."><i class="fa fa-phone-alt mr-1"></i> +91 1234567890</a></li>
+          <li><a href="#."><i class="fa fa-envelope mr-1"></i> info@demo.com</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 footer-content pr-0">
+        <h5>Make a Reservation</h5>
+        <p class="reserv">Morbi iaculis turpis eu mi suscipit auctor. Aliquam suscipit blandit lacus, vel posuere erat
+          condimentum vitae. Duis mollis libero metus, at mattis dolor dictum in. Pellentesque sit amet sagittis nibh.
+          Proin in varius eros, nec posuere arcu.</p>
+        <button class=" btn-sm px-4"> <i class="fa fa-phone-alt mr-1"></i> +91 1234567890</button>
+      </div>
+    </div>
+
+    <div class="row footer-container mb-0">
+      <div class="col-4 pl-0 text-left">
+        <i class="fas fa-paw fa-2x"></i><span class="text-capitalize ml-2 h5">wildies...</span>
+      </div>
+      <div class="col-4 text-center">
+        <div class="footer-icons mb-5">
+          <a href="#." alt="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#." alt="twitter"><i class="fab fa-twitter"></i></i></a>
+          <a href="#." alt="google+"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-4 text-right pr-0">
+        <small>@2023 demo.All rights reserved</small>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="https://kit.fontawesome.com/90db5d577d.js" crossorigin="anonymous"></script>
+  <script src="./js/slick.js"></script>
+
+  <script type="text/javascript">
+    $(".center").slick({
+      dots: false,
+      infinite: true,
+      centerMode: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      centerPadding: '0',
+      //       responsive: [
+      //   {
+      //     breakpoint: 768,
+      //     settings: {
+      //       arrows: false,
+      //       centerMode: true,
+      //       centerPadding: '40px',
+      //       slidesToShow: 3
+      //     }
+      //   },
+      //   {
+      //     breakpoint: 375,
+      //     settings: {
+      //       arrows: false,
+      //       centerMode: true,
+      //       centerPadding: '40px',
+      //       slidesToShow: 1
+      //     }
+      //   }
+      // ]
+    });
+
+
+  </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+          AOS.init();
+      </script>
+
+</body>
+
+</html>

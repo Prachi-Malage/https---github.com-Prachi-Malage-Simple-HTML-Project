@@ -1,0 +1,16 @@
+@mixin flexCode{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+@mixin bg-cafe {
+    background: url(../imges/yellow-bg.png);
+  background-repeat: no-repeat;
+  background-size: 70% 80%;
+  padding-bottom: 80px;
+}
+
+
+
